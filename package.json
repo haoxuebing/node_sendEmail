@@ -1,0 +1,12 @@
+{
+    "name": "send-email",
+    "version": "0.0.1",
+    "description": "nodejs-nodemailer",
+    "keywords": [
+        "email"
+    ],
+    "author": "XueBing",
+    "dependencies": {
+        "nodemailer": "^1.2.1"
+    }
+}

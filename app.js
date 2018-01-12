@@ -1,5 +1,16 @@
 var nodemailer = require('nodemailer');
 
+//163邮箱
+// var transporter = nodemailer.createTransport({
+//     host: "smtp.163.com",
+//     secureConnection: true,
+//     port: 465, 
+//     auth: {
+//         user: config.your_mail, //邮箱账号
+//         pass: config.mail_pass, //邮箱密码
+//     }
+// });
+
 var transporter = nodemailer.createTransport({
     host: 'smtp.qq.com',
     secureConnection: true, // use SSL
@@ -19,7 +30,7 @@ var mailOptions = {
     html: '<b>789</b>' // html body  当html不为空时 text内容会被覆盖
 };
 
-transporter.sendMail(mailOptions, function(error, info) {
+transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
         console.log(error);
     } else {
